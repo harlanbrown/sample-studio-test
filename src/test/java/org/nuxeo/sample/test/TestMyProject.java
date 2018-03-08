@@ -19,9 +19,11 @@ import org.nuxeo.runtime.test.runner.PartialDeploy;
 import org.nuxeo.runtime.test.runner.TargetExtensions;
 import org.nuxeo.ecm.platform.ec.notification.service.NotificationService;
 import org.nuxeo.sample.MyTargetExtension;
+import org.nuxeo.ecm.restapi.test.RestServerFeature;
 
 @RunWith(FeaturesRunner.class)
-@Features({ AutomationFeature.class })
+@Features({ RestServerFeature.class })
+@Deploy({"org.nuxeo.ecm.platform.notification.core","org.nuxeo.ecm.platform.ws"})                        
 @PartialDeploy(bundle = "studio.extensions.hbrown-SANDBOX", extensions = { MyTargetExtension.class, TargetExtensions.Automation.class })
 public class TestMyProject {
     @Test

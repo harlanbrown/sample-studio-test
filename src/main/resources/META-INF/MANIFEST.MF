@@ -6,3 +6,4 @@ Bundle-Version: 1.0.0
 Bundle-Name: sample-studio-test-core
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.nuxeo.sample.sample-studio-test-core;singleton=true
+Nuxeo-Component: OSGI-INF/test-contrib.xml
