@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <component name="org.nuxeo.sample.studio.test.contrib">
   <extension target="org.nuxeo.ecm.platform.ec.notification.service.NotificationService" point="templates">
-    <template name="tt" src="data/templates/test.ftl" />
+    <template name="localTestTemplate" src="data/templates/test.ftl" />
   </extension>
 </component>
 
